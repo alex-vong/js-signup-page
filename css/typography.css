@@ -1,85 +1,52 @@
-@font-face {
-    font-family: "MonoLisa Black";
-    src: local("MonoLisa Black"), local("MonoLisa-Black"),
-        local("MonoLisa-Black"), url(../fonts/MonoLisa-Black.woff2) format("woff2");
-
-}
-
-@font-face {
-    font-family: "MonoLisa Bold";
-    src: local("MonoLisa Bold"), local("MonoLisa-Bold"),
-        local("MonoLisa-Bold"), url(../fonts/MonoLisa-Bold.woff2) format("woff2");
-
-}
-
-@font-face {
-    font-family: "MonoLisa Medium";
-    src: local("MonoLisa Medium"), local("MonoLisa-Medium"),
-        local("MonoLisa-Medium"), url(../fonts/MonoLisa-Medium.woff2) format("woff2");
-
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 
 body {
-    color: ;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 .top-level-heading {
-    font-family: "MonoLisa Bold", sans-serif;
     font-size: var(--fluid-4);
-    color: var(--marker);
     font-weight: bold;
     line-height: 1.15;
-
 }
 
-
 .intro-voice {
-    font-family: "MonoLisa Bold";
+
     font-size: 18px;
     line-height: 1.15;
 }
 
 .second-level-heading {
-    font-family: "MonoLisa Medium";
+
     font-size: var(--fluid-3);
     font-weight: bold;
 }
 
 .third-level-heading {
-    font-family: "MonoLisa Medium";
+
     font-size: var(--fluid-2);
     line-height: 1.25;
     font-weight: bold;
-
 }
 
 .fourth-level-heading {
-    font-family: "MonoLisa Medium";
+
     font-size: var(--fluid-1);
     line-height: 1.15;
-
 }
 
 .body-copy {
-    font-family: "MonoLisa Medium";
-
     font-size: 0.925rem;
     -webkit-font-smoothing: antialiased;
     line-height: 1.4;
-    color: var(--pen);
 
 }
 
 .quiet-voice {
-    font-family: "MonoLisa Medium";
-
-    font-size: clamp(13px, 1vw, 14px);
+    font-size: clamp(10px, 1vw, 12px);
     line-height: 1.35;
-    color: var(--pen);
 
 }
 
