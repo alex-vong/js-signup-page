@@ -18,5 +18,5 @@ This week I learned about Javascript event handlers, functions, and Regular Expr
 
 ## Links
 
-You may be using [Markdown Live Preview](https://alexvong.dev/modules/js-signup-page/).
+You may view project here: [Javascript Signup Page](https://alexvong.dev/modules/js-signup-page/).
 
