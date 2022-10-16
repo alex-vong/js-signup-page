@@ -1,7 +1,9 @@
 
 
+
+
 .popup-wrapper {
-  display: none;
+  /*display: none;*/
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
@@ -10,17 +12,27 @@
   right: 0;
 }
 
+.popup-wrapper inner-column {
+  width: min(95%, 1000px);
+}
+
 
 .popup {
   font-family: arial;
   width: 100%;
-  max-width: 45%;
+  max-width: 500px;
   height: auto;
-  margin: 20% auto;
-  padding: 3.5rem 5rem;
+  margin: 300px auto;
+  padding: 5rem 2rem;
   background-color: white;
   position: relative;
     background-color: var(--background);
+}
+
+@media (min-width: 768px) {
+  .popup {
+      padding: 3rem 5rem;
+  }
 }
 
 .popup-content{
