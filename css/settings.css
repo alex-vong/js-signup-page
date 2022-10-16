@@ -1,18 +1,16 @@
 body {
 
+    --background:  rgb(34,52,70);
+    --text:  #fff;
+    --terms: #8e8e8e;
+    --button:  #72c024;
+    --accent:  #5aae45;
+    --accent:  #c96727;
 
-}
-
-
-@media(prefers-color-scheme: dark) {
-    body {}
-
-
-}
-
-@media(prefers-color-scheme: light) {
-    body {}
-
+    --error:  #ea5d78;
+    --pass:  #76AF3D;
+    
 
 
 }
+
