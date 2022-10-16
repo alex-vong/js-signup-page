@@ -3,17 +3,20 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh; /* for the footer */
-   background-color: var(--background);
-   color:  var(--color);
+   background: url('../images/bg-intro-mobile.png') no-repeat center center / cover;
+   background-attachment: fixed;
+   background-color: rgba(34, 52, 70, 1);
    overflow-x: hidden;
    -webkit-font-smoothing: antialiased;
    list-style: 0.5px;
+   color: var(--text);
 } 
 
 inner-column {
 	display:  block;
-	width: min(90%, 800px); /* could be a variable in settings */
+	width: min(90%, 1000px); /* could be a variable in settings */
 	margin-right: auto;
 	margin-left: auto;
 }
+
 
