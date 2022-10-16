@@ -27,6 +27,8 @@
 /* SITE SECTIONS */
 body {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 span {
@@ -41,7 +43,6 @@ span {
 }
 
 .signup-container {
-    margin: 20% auto;
     gap: 40px;
 }
 
@@ -75,9 +76,6 @@ span {
     background-color: #fdfdfd;
     border-radius: 0.5rem;
     box-shadow: 0px 7px 0px 0px rgba(10, 10, 10, 0.3);
-
-
-
     padding: 30px 25px;
     gap: 15px;
 
@@ -93,7 +91,7 @@ span {
 
 }
 
-.signup-form  input[type='submit'] {
+.signup-form input[type='submit'] {
     background-color: var(--button);
     color: var(--text);
     font-size: 14px;
@@ -101,21 +99,21 @@ span {
     padding-right: 40px;
     padding-left: 40px;
 
-   
-}
-
-div.form-container > form > p, 
-div ul.password-requirements {
-	display:  none;
-	color: var(--error);
-	font-size: 13px;
-	text-align: left;
-	padding-left: 5px;
 
 }
 
+div.form-container>form>p,
 div ul.password-requirements {
-	gap:  3px;
+    display: none;
+    color: var(--error);
+    font-size: 13px;
+    text-align: left;
+    padding-left: 5px;
+
+}
+
+div ul.password-requirements {
+    gap: 3px;
 
 }
 
@@ -132,26 +130,27 @@ div ul.password-requirements {
 }
 
 .signup-form input.error {
-	outline:  2px solid var(--error);
+    outline: 2px solid var(--error);
 }
 
 .signup-form input.success {
-	outline:  2px solid var(--pass);
+    outline: 2px solid var(--pass);
 }
 
 
 
 @media (min-width: 768px) {
 
-	body {
-   		background: url('../images/bg-intro-desktop.png') no-repeat center center / cover;
-   		background-color: rgba(34, 52, 70, 1);
+    body {
+        background: url('../images/bg-intro-desktop.png') no-repeat center center / cover;
+        background-color: rgba(34, 52, 70, 1);
 
-	}
+    }
 
     .signup-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 0;
     }
 
     .signup-wrapper .signup-container div.signup-text {
@@ -166,22 +165,37 @@ div ul.password-requirements {
 
     .signup-text h1 {
         font-size: var(--fluid-2);
+        width: 18ch;
     }
 
+    .signup-text p {
+        width: 29ch;
+    }
 
+}
+
+@media (min-width: 820px) {
+
+    .signup-text h1 {
+
+        width: 15ch;
+    }
+
+    .signup-text p {
+        width: 36ch;
+    }
 
 }
 
 
 @media (min-width: 1000px) {
 
-
-    .signup-text h1 {
-        font-size: var(--fluid-3);
+    .signup-container {
+        gap: 30px;
     }
 
     .signup-text p {
-    	width: 40ch;
+        width: 40ch;
     }
 
 }
