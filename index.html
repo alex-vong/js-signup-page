@@ -17,6 +17,16 @@
 </head>
 
 <body>
+    <section class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-content">
+                <div class="close-popup"><i class="fa-solid fa-xmark"></i></div>
+                <h2 class="third-level-heading">You're All Set To Go!</h2>
+                <p class="body-copy">Thank you for enrolling in the Alex Vong Dev Course! You're journey begins now! Click the link below go to the course page.</p>
+                <a href="">Course Page</a>
+            </div>
+        </div>
+    </section>
     <section class="signup-wrapper">
         <inner-column>
             <div class="signup-container">
@@ -30,9 +40,21 @@
                     </div>
                     <form action="" class="signup-form">
                         <input type="text" id="firstName" placeholder="First Name" class="input">
+                        <p class="firstName"></p>
                         <input type="text" id="lastName" placeholder="Last Name" class="input">
+                        <p class="lastName"></p>
                         <input type="email" id="email" placeholder="Email Address" class="input">
+                        <!-- <p class="email"></p> -->
                         <input type="password" id="password" placeholder="Password" class="input">
+                        <div>
+                            <ul class="password-requirements">
+                                <li>Password must between 8 to 16 characters and contain:</li>
+                                <li>At least 1 Lower case letter</li>
+                                <li>At least 1 Upper case letter</li>
+                                <li>At least 1 Number</li>
+                                <li>At least 1 Special Character</li>
+                            </ul>
+                        </div>
                         <input type="submit" value="Claim Your Free Trial">
                         <div class="terms">
                             <p class="quiet-voice">By Clicking the button, you are agreeing to our <span>Terms and Services</span></p>
@@ -42,8 +64,6 @@
             </div>
         </inner-column>
     </section>
-
-
     <script src="signup.js"></script>
 </body>
 
