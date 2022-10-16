@@ -3,7 +3,7 @@
 
 
 .popup-wrapper {
-  /*display: none;*/
+  display: none;
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
