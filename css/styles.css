@@ -54,7 +54,7 @@ span {
 }
 
 .signup-text h1 {
-    font-size: var(--fluid-4);
+    font-size: var(--fluid-3);
     font-weight: 600;
     line-height: 1.15;
 }
@@ -154,8 +154,7 @@ div ul.password-requirements {
     }
 
     .signup-wrapper .signup-container div.signup-text {
-        /*justify-content: center;*/
-        margin-top: 166.74px;
+        justify-content: center;
         text-align: left;
     }
 
