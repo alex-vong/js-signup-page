@@ -12,9 +12,11 @@ This week I learned about Javascript event handlers, functions, and Regular Expr
 
 ## Images
 
-![This is a alt text.]( "This is a sample image.")
+![Project on mobile.](/images/signup-mobile.png)
+![Project on mobile.](/images/signup-desktop.png)
+
 
 ## Links
 
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
+You may be using [Markdown Live Preview](https://alexvong.dev/modules/js-signup-page/).
 
