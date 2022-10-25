@@ -128,8 +128,6 @@ form.addEventListener('submit', e => {
 });
 
 
-
-
 close.addEventListener('click', () => {
     popup.style.display = 'block';
 
@@ -139,3 +137,46 @@ popup.addEventListener('click', e => {
     popup.style.display = 'none';
 
 });
+
+
+
+
+const show_pw_btn = document.querySelector('#show-pw')
+const show_pw_icon = show_pw_btn.querySelector('img')
+const pw_input = document.querySelector('#password')
+
+show_pw_btn.addEventListener('click', () => {
+    password.type = password.type === 'password' 
+        ? 'text' 
+        : 'password'
+
+    show_pw_icon.src = show_pw_icon.src.includes('open') 
+        ? 'images/eye_closed.svg' 
+        : 'images/eye_open.svg'
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
