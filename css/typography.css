@@ -38,7 +38,7 @@ body {
 }
 
 .body-copy {
-    font-size: 1rem;
+    font-size: 1 rem;
     -webkit-font-smoothing: antialiased;
     line-height: 1.4;
 
