@@ -86,7 +86,6 @@ span {
     padding: 15px;
     -webkit-padding:  15px;
     text-align: left;
-    font-weight: 600;
     border-radius: 0.2rem;
 
 
@@ -95,7 +94,8 @@ span {
 .signup-form input[type='submit'] {
     background-color: var(--button);
     color: var(--text);
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
     align-self: center;
     padding-right: 40px;
     padding-left: 40px;
