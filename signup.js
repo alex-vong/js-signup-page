@@ -141,18 +141,29 @@ popup.addEventListener('click', e => {
 
 
 
-const show_pw_btn = document.querySelector('#show-pw')
-const show_pw_icon = show_pw_btn.querySelector('img')
-const pw_input = document.querySelector('#password')
+const showPwBtn = document.querySelector('#show-pw')
+const showPwIcon = showPwBtn.querySelector('img')
+const pwInput = document.querySelector('#password')
 
-show_pw_btn.addEventListener('click', () => {
-    password.type = password.type === 'password' 
-        ? 'text' 
-        : 'password'
+showPwBtn.addEventListener('click', () => {
+    // password.type = password.type === 'password' 
+    //     ? 'text' 
+    //     : 'password'
 
-    show_pw_icon.src = show_pw_icon.src.includes('open') 
-        ? 'images/eye_closed.svg' 
-        : 'images/eye_open.svg'
+        if (password.type === 'password') {
+            password.type = 'text'
+        } else {
+            password.type = 'password';
+        }
+
+    // showPwIcon.src = showPwIcon.src.includes('open') 
+    //     ? 'images/eye_closed.svg' 
+    //     : 'images/eye_open.svg'
+        if (showPwIcon.src.includes('open')) {
+            showPwIcon.src = 'images/eye_closed.svg'; 
+        } else {
+            showPwIcon.src = 'images/eye_open.svg'; 
+        }
 })
 
 
