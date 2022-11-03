@@ -14,9 +14,23 @@ const popup = document.querySelector('.popup-wrapper');
 const close = document.querySelector('.close-popup');
 
 
-const patternName = /^[a-zA-Z]{1,30}$/;
-const emailPattern = /^([a-zA-z\d\.-]+)@([a-zA-Z\d\.-]+)\.([a-z]{2,10})(\.[a-z]{2,10})?$/;
-const passwordPattern = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})/;
+//RegEx test to allow input to container characters a to z in both lower and uppercase
+//and allow the input to be between no less than 1 and no more than 30 characters
+const nameRegexTest = /^[a-zA-Z]{1,30}$/;
+
+//Regex Testing for email
+//first section for name: essentially allows any character
+//next requires @ symbol
+//follwed by domain which also allows any character or symbol
+//followed by . (dot) symbol
+//followed by extension which allows any charcter or symbol but requires it to be bwtween 2-10 char
+//followed by optional extention that follows same requirements as primary extention
+const emailRegExTest = /^([a-zA-z\d\.-]+)@([a-zA-Z\d\.-]+)\.([a-z]{2,10})(\.[a-z]{2,10})?$/;
+
+//Regest Testing for password that requires
+//at least one lowercase letter, one Uppercase letter, one digit, one specioal character
+//and be ATLEAST 8 characters
+const passwordRegExTest = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})/;
 
 
 firstName.addEventListener('keyup', e => {
@@ -24,7 +38,7 @@ firstName.addEventListener('keyup', e => {
     form.firstName.classList.remove('success');
 
 
-    if (patternName.test(e.target.value)) {
+    if (nameRegexTest.test(e.target.value)) {
         form.firstName.classList.remove('error');
         form.firstName.classList.add('success');
         fnameHelper.style.display = 'none';
@@ -35,12 +49,13 @@ firstName.addEventListener('keyup', e => {
             fnameHelper.style.display = 'none';
         }
 
-        if (e.target.value) {
-            form.firstName.classList.remove('success');
-            form.firstName.classList.add('error');
-            fnameHelper.style.display = 'block';
-            fnameHelper.textContent = 'Name cannot contain numbers or special characters';
-        }
+    if (e.target.value) {
+        form.firstName.classList.remove('success');
+        form.firstName.classList.add('error');
+        fnameHelper.style.display = 'block';
+        fnameHelper.textContent = 'Name cannot contain numbers or special characters';
+    }
+    
     }
 })
 
@@ -48,7 +63,7 @@ lastName.addEventListener('keyup', e => {
     form.lastName.classList.remove('error');
     form.lastName.classList.remove('success');
 
-    if (patternName.test(e.target.value)) {
+    if (nameRegexTest.test(e.target.value)) {
         form.lastName.classList.remove('error');
         form.lastName.classList.add('success');
         lnameHelper.style.display = 'none';
@@ -72,7 +87,7 @@ email.addEventListener('keyup', e => {
     form.email.classList.remove('error');
     form.email.classList.remove('success');
 
-    if (emailPattern.test(e.target.value)) {
+    if (emailRegExTest.test(e.target.value)) {
         form.email.classList.remove('error');
         form.email.classList.add('success');
     } else {
@@ -94,7 +109,7 @@ password.addEventListener('keyup', e => {
     form.password.classList.remove('error');
     form.password.classList.remove('success');
 
-    if (passwordPattern.test(e.target.value)) {
+    if (passwordRegExTest.test(e.target.value)) {
         form.password.classList.remove('error');
         form.password.classList.add('success');
         passwordHelper.style.display = 'none';
@@ -121,7 +136,7 @@ form.addEventListener('submit', e => {
     e.preventDefault();
 
 
-    if (patternName.test(form.firstName.value) && patternName.test(form.lastName.value) && emailPattern.test(form.email.value) && passwordPattern.test(form.password.value)) {
+    if (nameRegexTest.test(form.firstName.value) && nameRegexTest.test(form.lastName.value) && emailRegExTest.test(form.email.value) && passwordRegExTest.test(form.password.value)) {
         popup.style.display = 'block';
     };
 
