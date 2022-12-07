@@ -129,9 +129,6 @@ password.addEventListener('keyup', e => {
 });
 
 
-
-
-
 form.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -152,10 +149,6 @@ popup.addEventListener('click', e => {
     popup.style.display = 'none';
 
 });
-
-
-
-
 const showPwBtn = document.querySelector('#show-pw')
 const showPwIcon = showPwBtn.querySelector('img')
 const pwInput = document.querySelector('#password')
