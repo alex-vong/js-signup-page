@@ -23,6 +23,10 @@ The goal of this project was to get a better understanding of JavaScript event h
 * Figma
 * Whimsical
 * MDN Documentation
+* Terminal
+* AWS Server
+* GitHub
+* FileZilla
 
 
 ## Images
